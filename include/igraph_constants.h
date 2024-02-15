@@ -209,7 +209,9 @@ typedef enum { IGRAPH_RANDOM_WALK_STUCK_ERROR = 0,
 typedef enum {
     IGRAPH_LPA_DOMINANCE = 0, // Sample from dominant labels, check for dominance after each iteration
     IGRAPH_LPA_RETENTION,     // Keep current label if among dominant labels, only check if labels changed
-    IGRAPH_LPA_FAST           // Sample from dominant labels, only check neighbors
+    IGRAPH_LPA_FAST,           // Sample from dominant labels, only check neighbors
+    IGRAPH_CK_LPA,
+    IGRAPH_DPC_LPA
 } igraph_lpa_variant_t;
 
 __END_DECLS
